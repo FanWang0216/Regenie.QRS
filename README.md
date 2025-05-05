@@ -1,9 +1,9 @@
-# Regenie.QRS
-This repository provides code and instructions for conducting Regenie.GWAS for quantitative traits as described in our paper ["Regenie.QRS: computationally efficient whole-genome quantile regression at biobank scale"].
+# Regenie.QRS:computationally efficient whole-genome quantile regression 
+This repository contains code and instructions for performing quantile regression genome-wide association studies (GWAS) with related samples for quantitative traits, as described in our paper ["Regenie.QRS: computationally efficient whole-genome quantile regression at biobank scale"].
 
 ## Install dependent sofware
 
-Regenie [https://rgcgithub.github.io/regenie/]
+Regenie [https://rgcgithub.github.io/regenie/](https://rgcgithub.github.io/regenie/)
 
 ## Install dependent packages in R
 
