@@ -1,15 +1,11 @@
 # Regenie.QRS:computationally efficient whole-genome quantile regression 
 This repository contains code and instructions for performing quantile regression genome-wide association studies (GWAS) with related samples for quantitative traits, as described in our paper ["Regenie.QRS: computationally efficient whole-genome quantile regression at biobank scale"].
 
-## Install dependent sofware
+## Install dependent sofware and R packages
 
 Regenie [https://rgcgithub.github.io/regenie/](https://rgcgithub.github.io/regenie/)
 
-## Install dependent packages in R
-
 quantreg [https://cran.r-project.org/package=quantreg](https://cran.r-project.org/package=quantreg)
-
-QRank [https://CRAN.R-project.org/package=QRank](https://CRAN.R-project.org/package=QRank)
 
 data.table [https://CRAN.R-project.org/package=data.table](https://CRAN.R-project.org/package=data.table)
 
@@ -20,9 +16,10 @@ dplyr [https://CRAN.R-project.org/package=dplyr](https://CRAN.R-project.org/pack
 
 We provide a toy dataset in [example](/example). 
 The input data includes 
-1) the [genotype matrix](example/example.genotype.tsv) that contains N sample = 503 individuals (column "IID") 
-and N variant = 10 SNPs (columns starting with "1-555") from the [1000 Genome Phase 3](https://www.internationalgenome.org/category/phase-3/).
-2) the [phenotype table](example/example.phenotype.tsv) that contains one simulated quantitative trait (column "PHENOTYPE") and two simulated covariates (columns "COVAR1" and "COVAR2") for the N sample = 503 individuals (column "IID").
+1) the binary [genotype file](example/example.bed) that contains N sample = 500 individuals (column "IID") 
+and N variant = 100 SNPs from the [https://github.com/cloufield/GWASTutorial.git/01_Dataset/download_sampledata.sh](https://github.com/cloufield/GWASTutorial.git/01_Dataset/download_sampledata.sh).
+2) the [phenotype file](example/normalized_pheno.txt) that contains one simulated quantitative trait (column "Y1") for the N sample = 500 individuals (column "IID").
+3) the [covariate file](example/covariate.txt) that contains two simulated covariates (columns "COVAR1" and "COVAR2") for the N sample = 500 individuals (column "IID").
 
 Run the R script [example.regenie.qrs.R](example.regenie.qrs.R) to perform Regenie.QRS GWAS (single variant tests) for the phenotype and genotype data in [example](/example). Set ```is.effect.estimated = T``` to enable the estimation of quantile-specific effect size (disabled by default).
 
