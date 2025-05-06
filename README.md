@@ -30,7 +30,7 @@ The [expected output](example/example.sumstat.tsv) is a tab-delimited text file 
 - Columns from "P_QR0.1" to "P_QR0.9": quantile-specific p-value for the quantile levels 0.1, 0.2, ..., 0.9.
 - Columns from "BETA_QR0.1" to "BETA_QR0.9": quantile-specific effect size for the quantile levels 0.1, 0.2, ..., 0.9.
 
-
+The R script [simulation.blup.qrs.R](simulation.blup.qrs.R) contains the simulation code for performing BLUP.QRS, which requires the SAIGE software to be installed. Instructions for installation SAIGE are available at [https://github.com/weizhouUMICH/SAIGE?tab=readme-ov-file#how-to-install-and-run-saige-and-saige-gene](https://github.com/weizhouUMICH/SAIGE?tab=readme-ov-file#how-to-install-and-run-saige-and-saige-gene).
 
 ## Suggestions for genome-wide analysis
 
